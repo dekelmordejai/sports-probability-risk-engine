@@ -1,0 +1,28 @@
+portfolio:
+  default_bankroll_mxn: 25000.0
+  kelly_fraction: 0.25
+  max_total_exposure: 0.15
+  max_parlay_exposure: 0.03
+  min_ev_threshold: 0.025
+  max_normalized_entropy: 0.990
+  human_round_step_mxn: 50.0
+  max_drawdown_killswitch_pct: 20.0
+
+leagues:
+  soccer:
+    xi_decay: 0.0032
+    xg_weight: 0.65
+    pi_lambda: 0.035
+    pi_gamma: 0.70
+    liga_mx_altitude_gamma: 0.085
+  nfl:
+    process_var_q: 0.45
+    obs_var_r: 135.0
+    base_game_std: 13.2
+    hfa_base: 1.85
+  nba:
+    league_avg_pace: 99.4
+    league_avg_ortg: 115.2
+    base_hca_pts: 2.15
+    base_spread_std: 11.85
+    base_total_std: 15.60

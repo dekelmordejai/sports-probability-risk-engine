@@ -1,0 +1,16 @@
+numpy>=1.26.0
+pandas>=2.2.0
+pyarrow>=15.0.0
+scipy>=1.12.0
+scikit-learn>=1.4.0
+lightgbm>=4.3.0
+optuna>=3.6.0
+requests>=2.31.0
+PyYAML>=6.0.1
+gspread>=6.0.0
+google-auth>=2.28.0
+# 0.3.3 requires pandas<2; retain the pandas>=2-compatible release.
+nfl_data_py==0.3.2
+nba_api>=1.4.1
+pytest>=8.0.0
+ipywidgets>=8.1.0

@@ -1,0 +1,39 @@
+{
+  "data_source": "SYNTHETIC: seeded fixtures, not historical matches or market observations",
+  "generator_seed": 2026,
+  "history_matches": 64,
+  "warmup_matches": 32,
+  "evaluated_matches": 32,
+  "evaluation_start": "2025-04-07T00:00:00",
+  "evaluation_end": "2025-07-09T00:00:00",
+  "retrain_step_days": 14,
+  "class_order": [
+    "home",
+    "draw",
+    "away"
+  ],
+  "lower_scores_are_better": true,
+  "scores": {
+    "dixon_coles_pi": {
+      "rps": 0.21879121109454425,
+      "brier_multiclass": 0.7255811280193889,
+      "log_loss": 1.1953696480201503
+    },
+    "uniform": {
+      "rps": 0.21006944444444448,
+      "brier_multiclass": 0.6666666666666667,
+      "log_loss": 1.0986122886681098
+    },
+    "expanding_frequencies_laplace": {
+      "rps": 0.21425584435305373,
+      "brier_multiclass": 0.7047313850684931,
+      "log_loss": 1.16221356540694
+    },
+    "synthetic_market_shin": {
+      "rps": 0.2090826983671485,
+      "brier_multiclass": 0.6767796438038292,
+      "log_loss": 1.1086218732982616
+    }
+  },
+  "interpretation": "Software demonstration only; does not establish calibration, market advantage or profitability."
+}
