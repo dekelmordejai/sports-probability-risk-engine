@@ -14,6 +14,12 @@ python -m examples.offline_evaluation --output reports/evaluation
 
 La suite verifica contratos de software y matemáticas, modelos con datos sintéticos, adaptadores con respuestas simuladas y los cinco modos offline. No se usaron credenciales reales ni se enviaron alertas. Las métricas del ejemplo temporal se basan en datos generados, no son un benchmark de deporte real ni un registro de rentabilidad.
 
+## Ejecución pública en GitHub
+
+La [ejecución inicial de CI](https://github.com/dekelmordejai/sports-probability-risk-engine/actions/runs/40787083477), sobre el commit `c472eb3838f7a8351185f7264136887e493ea779`, terminó con estado **Success** el 28 de octubre de 2026, en 52 segundos. Finalizaron correctamente los dos trabajos de Python 3.11 y 3.12 en Ubuntu 24.04. Cada trabajo ejecutó las 77 pruebas, la demostración multideporte y el ejemplo temporal con baselines. La ejecución no mostró anotaciones de error o advertencia.
+
+Los 52 segundos son la duración del workflow sintético; no miden latencia con proveedores reales. El commit posterior que agrega esta evidencia solo modifica documentación y omite la repetición de CI.
+
 ## Resultado del ejemplo sintético
 
 64 partidos generados, 32 de calentamiento y 32 de evaluación. Clase: local/empate/visita. Resultados redondeados solo para mostrar; los valores completos están en `examples/output/synthetic_evaluation.json`.

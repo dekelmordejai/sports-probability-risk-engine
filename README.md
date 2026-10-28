@@ -52,7 +52,7 @@ El flujo diario usa los modelos base de fútbol, NFL y NBA. El meta-modelo, prop
 
 ## Validación y reproducibilidad
 
-Las pruebas distinguen contratos matemáticos, consistencia de riesgo, liquidación idempotente y disponibilidad temporal de información. Las regresiones temporales comprueban que modificar resultados futuros no cambie pronósticos anteriores y que los partidos de un mismo día no incorporen resultados de ese día en sus features. Véanse [resultados de verificación](docs/VERIFICATION.md).
+La suite de **77 pruebas** distingue contratos matemáticos, consistencia de riesgo, liquidación idempotente y disponibilidad temporal de información. Las regresiones temporales comprueban que modificar resultados futuros no cambie pronósticos anteriores y que los partidos de un mismo día no incorporen resultados de ese día en sus features. Se verificó en Python 3.11 y 3.12 en GitHub Actions. Véanse [resultados de verificación](docs/VERIFICATION.md).
 
 La integración continua se ejecuta en Python 3.11 y 3.12, con permisos de lectura y demostraciones sintéticas. Esta edición pública no contiene tareas programadas con credenciales ni publica estados o reportes de operación. Las dependencias mínimas están en `requirements.txt`; `requirements-lock-py312.txt` registra el entorno Windows/Python 3.12 utilizado en la revisión inicial y no es un lock universal.
 
